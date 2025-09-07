@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usama mussa - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!------------------------------------Moving Background Text - ----------------------------->
+<div class="moving-bg">
+    <div class="moving-text-1">USAMA</div>
+    <div class="moving-text-2">USAMA</div>
+    <div class="moving-text-3">USAMA</div>
+</div>
+
+<!-----------------------page-loadere------------->
+     Page Loader 
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <h1>Portfolio.</h1>
+                <div class="glow-effect"></div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Loading...</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="loading-text">Preparing your experience...</p>
+        </div>
+    </div>
+<!------------------------------------Menu-Bar-------------------------------------->
+     Navigation 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- <div class="nav-logo">Portfolio.</div> -->
+             <a href="#home" class="logo">Portfolio.</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        <div class="nav-right">
+            <!-- -----------------------------Theme Toggle Button--------------------- -->
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <!-- Hamburger Menu (3 Lines) -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<!----------------------------------Home-Section-------------------------------->
+     Hero Section 
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Hi, Myself</p>
+                    <h1 class="hero-title">Usama Musa</h1>
+                    <p class="hero-description">And I'm a <span class="highlight" id="changingText">Frontend Developer!</span></p>
+                    <p class="hero-paragraph">
+                    I'm a passionate Frontend Web Developer focused on creating responsive, user-friendly interfaces.
+                    Skilled in HTML, CSS, JavaScript, and modern frameworks to bring designs to life.
+                    Dedicated to crafting seamless digital experiences with clean and efficient code.
+                    </p>
+                    <!------------------------------Social-Links------------------------->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1FArGqs2gV/" class="social-link"><i class="fab fa-facebook-f" title="FB"></i></a>
+                        <a href="https://www.tiktok.com/@codexusama7?_t=ZS-8zXOrOKAuCO&_r=1" class="social-link"><i class="fab fa-tiktok" title="TikTok"></i></a>
+                        <a href="https://www.instagram.com/codexusama?igsh=c3p1dWdlcWU3eGV4" class="social-link"><i class="fab fa-instagram" title="insta"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in" title="Lin"></i></a>
+                        <a href="https://github.com/UsamaLone" class="social-link"><i class="fab fa-github" title="Ghb"></i></a>
+                           
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/+923184830933" target="_blank" class="btn-primary hire-me-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            Hire Me
+                        </a>
+                        <a href="#contact" class="btn-secondary contact-me-btn">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="profile.png" alt="usama'pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!------------------------------------------about-Section------------------------------------>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+                <p>I'm a passionate web designer and developer with expertise in creating beautiful, functional websites that deliver exceptional user experiences.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="about.png" alt="About usama lone">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>I'm Usama Lone</h3>
+                    
+                    
+                    <p>I'm a detail-oriented developer who enjoys turning ideas into visually appealing, interactive web experiences. My work focuses on building responsive and accessible applications that adapt perfectly to any device or screen size.</p>
+                    <p>I love solving problems, exploring new technologies, and creating designs that blend functionality with great user experience. My aim is to deliver digital solutions that are both beautiful and impactful.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="30">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+
+                    <a href="Usama Mussa.pdf" class="btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-----------------------------------Education-Section----------------------------->
+<section id="education">
+    <div class="education">
+        <h2>My Education</h2>
+        
+        <div class="education-cards-horizontal">
+             DIT Card 
+            <div class="education-card current enhanced-card">
+                <div class="education-header-enhanced current-header">
+                    <div class="education-badge current-badge">
+                        <i class="fas fa-clock"></i>
+                        Currently Studying
+                    </div>
+                    <div class="education-year-enhanced">2024 - Present</div>
+                </div>
+                
+                <div class="education-body-enhanced">
+                    <div class="education-icon-enhanced current-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Diploma in Information Technology (DIT)</h3>
+                        <h4>PI Technical Institute Bhara Kahu Islamabad</h4>
+                        <p>Currently pursuing DIT with specialization in web development, programming languages, database management, and modern software technologies.</p>
+                        
+                        <div class="education-details-enhanced">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Duration: 2 Years</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <span>Focus: Web Development</span>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-section-enhanced">
+                            <div class="progress-label">Course Progress</div>
+                            <div class="progress-bar-enhanced">
+                                <div class="progress-fill-enhanced" data-progress="50">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             Matric Card 
+            <div class="education-card completed enhanced-card">
+                <div class="education-header-enhanced">
+                    <div class="education-badge completed-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Completed
+                    </div>
+                    <div class="education-year-enhanced">2022 - 2023</div>
+                </div>
+                
+                <div class="education-body-enhanced">
+                    <div class="education-icon-enhanced">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Matriculation (SSC)</h3>
+                        <h4>Standard Public School Astore GB</h4>
+                        <p>Successfully completed matriculation with excellent grades. Built strong foundation in core subjects including Mathematics, Science, English, and Computer Studies.</p>
+                        
+                        <div class="education-details-enhanced">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Duration: 2 Years</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Grade: Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------------- Skills Section ----------------------------->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <p>Technologies and tools I use to create amazing projects</p>
+        </div>
+        
+        <div class="skills-container">
+            <!-- Skill Categories -->
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75">
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50">
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Design & UI/UX</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70">
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50">
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Canva</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Icons -->
+            <div class="tech-icons">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-icon">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-icon">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="tech-icon">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Photoshop</span>
+                </div>
+                <div class="tech-icon">
+                    <i class="fas fa-palette"></i>
+                    <span>Canva</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--------------------------------------------service-section------------------------------> 
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I create modern, responsive websites using the latest technologies. From simple landing pages to complex web applications, I deliver high-quality solutions that meet your business needs and provide excellent user experiences.</p>
+                    <button class="btn-outline">Read More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>I design beautiful, user-friendly interfaces that combine aesthetics with functionality. My designs focus on creating engaging user experiences that convert visitors into customers while maintaining brand consistency.</p>
+                    <button class="btn-outline">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!----------------------------------------------project-section------------------------->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest <span class="highlight">Projects</span></h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>E-commerce Website</h3>
+                                <p>Modern online store with payment integration</p>
+                                <a href="https://usamalone.github.io/HarronFashionHub/" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Restaurant Website</h3>
+                                <p>Responsive restaurant site with online ordering</p>
+                                <a href="https://usamalone.github.io/Asfandsipcool/" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=250&fit=crop" alt="Portfolio Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Portfolio Website</h3>
+                                <p>Creative portfolio for digital agency</p>
+                                <a href="https://sohaibyt.github.io/Shohaib-khan/" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=250&fit=crop" alt="Music App Interface">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Music App Interface</h3>
+                                <p>Modern music streaming app design</p>
+                                <a href="#" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400&h=250&fit=crop" alt="Business Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Business Dashboard</h3>
+                                <p>Analytics dashboard for business management</p>
+                                <a href="#" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Mobile App Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Mobile App Design</h3>
+                                <p>UI/UX design for fitness tracking app</p>
+                                <a href="#" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!----------------------------------------------Contact-section----------------------------------->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                            <span class="error-message" id="fullNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                            <span class="error-message" id="mobileError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                    </div>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <!---------------------------------------Footer-section---------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 by Usama-Lone | All Rights Reserved.</p>
+                <button id="scrollToTop" class="scroll-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
