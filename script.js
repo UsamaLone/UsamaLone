@@ -508,6 +508,18 @@ if (contactFormElement) {
     
     contactFormElement.addEventListener('mouseleave', function() {
         this.style.boxShadow = '';
+
+
+//humberger==============================
+        const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+}
+
         this.style.borderColor = '';
     });
 }
