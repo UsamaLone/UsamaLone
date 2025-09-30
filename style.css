@@ -1882,97 +1882,43 @@ body {
 }
 /* ---------------- Responsive Design ---------------- */
 
-/* ---------- Responsive Loader ---------- */
+/* Mobile Navbar Fix */
 @media (max-width: 768px) {
-    .loader-content h1 {
-        font-size: 1.5rem;
-    }
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1100;
+  }
 
-    .loading-text {
-        font-size: 0.9rem;
-    }
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+  }
 
-    .progress-container {
-        width: 80%;
-    }
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: -220px; /* hidden by default */
+    width: 200px;
+    flex-direction: column;
+    background: var(--bg-primary);
+    padding: 1rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
 
-    .loading-dots .dot {
-        width: 8px;
-        height: 8px;
-        margin: 0 3px;
-    }
-}
+  .nav-menu.active {
+    right: 0; /* show when active */
+  }
 
-@media (max-width: 480px) {
-    .loader-content h1 {
-        font-size: 1.2rem;
-    }
-
-    .progress-container {
-        width: 90%;
-    }
-
-    .loading-text {
-        font-size: 0.8rem;
-    }
-}
-
-/* ---------- Responsive Hero Section ---------- */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-image img {
-        width: 180px;
-        height: auto;
-    }
-}
-
-/* ---------- Responsive About Section ---------- */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image img {
-        max-width: 200px;
-    }
-
-    .stats {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
-/* ---------- Responsive Portfolio ---------- */
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ---------- Responsive Contact Form ---------- */
-@media (max-width: 768px) {
-    .contact-form .form-row {
-        flex-direction: column;
-    }
-
-    .btn-primary {
-        width: 100%;
-    }
+  .nav-menu li {
+    margin: 1rem 0;
+    text-align: center;
+  }
 }
